@@ -1,0 +1,172 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: conveythought\n"
+"POT-Creation-Date: 2016-02-11 17:34+0900\n"
+"PO-Revision-Date: 2016-02-11 17:34+0900\n"
+"Last-Translator: \n"
+"Language-Team: mahirock <mahirock1607@gmail.com>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: editor-style.css\n"
+"X-Poedit-SearchPath-2: style.css\n"
+"X-Poedit-SearchPath-3: 404.php\n"
+"X-Poedit-SearchPath-4: archive.php\n"
+"X-Poedit-SearchPath-5: category.php\n"
+"X-Poedit-SearchPath-6: comments.php\n"
+"X-Poedit-SearchPath-7: footer.php\n"
+"X-Poedit-SearchPath-8: functions.php\n"
+"X-Poedit-SearchPath-9: header.php\n"
+"X-Poedit-SearchPath-10: index.php\n"
+"X-Poedit-SearchPath-11: page.php\n"
+"X-Poedit-SearchPath-12: parts-slider.php\n"
+"X-Poedit-SearchPath-13: parts-slideshow.php\n"
+"X-Poedit-SearchPath-14: search.php\n"
+"X-Poedit-SearchPath-15: sidebar.php\n"
+"X-Poedit-SearchPath-16: single.php\n"
+"X-Poedit-SearchPath-17: tag.php\n"
+"X-Poedit-SearchPath-18: inc/breadcrumbs.php\n"
+"X-Poedit-SearchPath-19: inc/cleanup.php\n"
+"X-Poedit-SearchPath-20: inc/custom.php\n"
+"X-Poedit-SearchPath-21: inc/customizer.php\n"
+"X-Poedit-SearchPath-22: inc/init.php\n"
+"X-Poedit-SearchPath-23: inc/scripts.php\n"
+"X-Poedit-SearchPath-24: inc/titles.php\n"
+"X-Poedit-SearchPath-25: inc/widgets.php\n"
+"X-Poedit-SearchPath-26: parts/parts-tag_category.php\n"
+"X-Poedit-SearchPath-27: parts/parts-related.php\n"
+"X-Poedit-SearchPath-28: parts/parts-slider.php\n"
+
+#: 404.php:11 404.php:14
+msgid "Page Not Found."
+msgstr "お探しのページは見つかりませんでした。"
+
+#: 404.php:15
+msgid "You URL is wrong."
+msgstr "あなたのURLは間違っている可能性があります。"
+
+#: 404.php:16
+msgid "Or, there is already a possibility that the page has been deleted."
+msgstr "もしくは、ページが削除された可能性があります。"
+
+#: 404.php:17
+msgid "Please search if necessary."
+msgstr "必要に応じて検索してください。"
+
+#: archive.php:15
+msgid "year"
+msgstr "年"
+
+#: archive.php:16
+msgid "month"
+msgstr "月"
+
+#: inc/customizer.php:48
+msgid "Base Color"
+msgstr "ベースカラー"
+
+#: inc/customizer.php:63
+msgid "Main Color"
+msgstr "メインカラー"
+
+#: inc/customizer.php:78
+msgid "Navigation Color"
+msgstr "メニューテキストカラー"
+
+#: inc/customizer.php:154 parts/parts-related.php:17
+msgid "Related Article"
+msgstr "関連記事"
+
+#: inc/customizer.php:163
+msgid "Display of the related article"
+msgstr "関連記事を表示"
+
+#: inc/customizer.php:177
+msgid "The number of articles to display.Please change it."
+msgstr ""
+"表示させる記事の数。\n"
+"変更してください。"
+
+#: inc/customizer.php:201 inc/customizer.php:240
+msgid "Slide Image"
+msgstr "スライド画像"
+
+#: inc/customizer.php:256
+msgid "Image"
+msgstr "画像"
+
+#: inc/customizer.php:272
+msgid "If you put a link to the image"
+msgstr "画像にリンクを配置する場合"
+
+#: inc/init.php:28
+msgid "HEADER MENU"
+msgstr "ヘッダーメニュー"
+
+#: inc/init.php:41
+msgid "...more"
+msgstr "…続きを読む"
+
+#: parts/parts-related.php:38
+msgid "Related articles was not."
+msgstr "関連する記事はありませんでした。"
+
+#: search.php:18
+msgid "SEARCH"
+msgstr "検索"
+
+#: search.php:19
+msgid "search results :"
+msgstr "検索結果："
+
+#: search.php:19
+msgid "Hit."
+msgstr "件"
+
+#: search.php:34
+msgid "Hit Post:"
+msgstr "ヒット記事："
+
+#: search.php:41
+msgid "Not found."
+msgstr "見つかりませんでした。"
+
+#: search.php:42
+msgid "Words might not exist wrong or page."
+msgstr "キーワードが間違っているか、ページが存在しない可能性があります。"
+
+#: search.php:43
+msgid "Please search again to put another word."
+msgstr "別のキーワードを入れてもう一度検索してください。"
+
+#: single.php:32
+msgid "DATE:"
+msgstr "日付："
+
+#: single.php:32
+msgid "Author:"
+msgstr "投稿者："
+
+#: single.php:43
+msgid "Next page"
+msgstr "次のページへ"
+
+#: single.php:44
+msgid "Previous page"
+msgstr "前のページへ"
+
+#~ msgid "TAG:"
+#~ msgstr "タグ："
+
+#~ msgid "CATEGORY:"
+#~ msgstr "カテゴリー："
+
+#~ msgid "Search"
+#~ msgstr "検索する"
