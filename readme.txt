@@ -28,6 +28,8 @@ info@mmyou-design.com
 
 
 ## == Changelog ==
+* v1.0.6[2016.03.24]
+* * js fancybox Setting.
 * v1.0.5[2016.02.26]
 * * Style modification.
 * v1.0.4[2016.02.25]
