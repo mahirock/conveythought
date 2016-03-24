@@ -7,7 +7,7 @@
   fancybox
 --------------------------------------------------------------*/
 jQuery(document).ready(function() {
-  jQuery("a img").fancybox({
+  jQuery(".post a img").fancybox({
     closeClick : true,
 
     openEffect : 'none',
