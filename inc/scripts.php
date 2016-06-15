@@ -14,6 +14,7 @@ function conveythought_scripts() {
     wp_enqueue_style( 'fancybox', get_template_directory_uri() . '/js/fancybox/jquery.fancybox.css', true );
     wp_enqueue_style( 'flexslider', get_template_directory_uri() . '/js/flexslider/flexslider.css', true );
     wp_enqueue_style( 'common', get_template_directory_uri() . '/css/common.css', true );
+    wp_enqueue_style( 'main', get_template_directory_uri() . '/css/main.min.css', true );
     //js
     wp_deregister_script('jquery');
     wp_enqueue_script( 'jquery1-10-2', get_template_directory_uri() . '/js/jquery1-10-2.js', array(), '1.10.2', true );

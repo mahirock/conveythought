@@ -1,0 +1,40 @@
+//color variable
+
+$color-white: #FFF;
+$color-black: #000;
+$color-pink: #ffafbd;
+
+$color-base: #FFF;
+$color-text: #000;
+$color-main: #000;
+$color-accent: #ffafbd;
+
+//font size
+$font-size: 18px;
+
+//breakpoints
+$breakpoints-tbl-min: 1200px;
+$breakpoints-tbl-max: 1119px;
+$breakpoints-tbs-min: 992px;
+$breakpoints-tbs-max: 991px;
+$breakpoints-sm-min: 768px;
+$breakpoints-sm-max: 767px;
+
+//media query settings
+@mixin max-screen($break-point) {
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin min-screen($break-point) {
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin screen($break-point-min, $break-point-max) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}

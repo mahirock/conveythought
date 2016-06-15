@@ -1,0 +1,36 @@
+// main: ../main.scss
+// single
+/*--------------------------------------------------------------
+  comments
+--------------------------------------------------------------*/
+#respond,
+.comment-wrap {
+	padding : 15px;
+	border-radius : 10px;
+	border : 1px solid #f4f4f4;
+	margin-bottom : 50px;
+  a {
+  	text-decoration : none;
+  }
+}
+#comments label {
+	display : block;
+}
+.comment-body {
+	margin-bottom : 30px;
+	border-bottom : 1px dashed #000;
+	padding-bottom : 30px;
+}
+.comment-author {
+	border-bottom : 1px solid #000;
+}
+.reply {
+  a {
+  	background : #ffafbd;
+  	padding : 10px 15px 8px;
+  	border-radius : 5px;color : #000;
+    &:hover {
+    	background : #ccc;
+    }
+  }
+}
