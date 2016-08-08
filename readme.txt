@@ -4,7 +4,7 @@ Conveythought theme will allow you to build a enjoyable blog site.
 It is possible to change the color in the Theme Customizer.
 
 ## === Tags ===
-responsive, custom-background, custom-colors, custom-header, custom-menu, editor-style,theme-options
+responsive, custom-background, custom-colors, custom-header, custom-menu, custom-logo, editor-style, theme-options,
 
 
 ## === Features ===
@@ -28,6 +28,12 @@ info@mmyou-design.com
 
 
 ## == Changelog ==
+* v1.0.9[2016.07.26]
+* * Bug fixing.
+* v1.0.8[2016.06.23]
+* * Change to sass.
+* v1.0.7[2016.06.23]
+* * Change the theme screenshot.
 * v1.0.6[2016.03.24]
 * * js fancybox Setting.
 * v1.0.5[2016.02.26]

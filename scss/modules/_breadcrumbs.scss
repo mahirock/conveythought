@@ -1,19 +1,20 @@
 // main: ../main.scss
+/*--------------------------------------------------------------
 // Bootstrap
-
+--------------------------------------------------------------*/
 .breadcrumb {
-	background : $color-black;
-	color : $color-pink;
-	line-height : 1.5;
-	padding :10px 20px 5px;
+	background: $color-black;
+	color: $color-pink;
+	line-height: 1.5;
+	padding:10px 20px 5px;
 	li {
-		height : 100%;
+		height: 100%;
 	}
 	a {
-		color : $color-white;
+		color: $color-white;
 		&:hover,
 		&:active {
-			color : #ccc;
+			color: #ccc;
 		}
 	}
 }

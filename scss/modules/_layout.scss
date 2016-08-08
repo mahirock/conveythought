@@ -1,38 +1,389 @@
 // main: ../main.scss
 //layout
 
+//Element
+
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-size: 62.5%;
+}
+body {
+	margin: 0;
+	padding-top: 10px;
+	color: $color-black;
+	background: $color-white;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 2;
+	border-top: 3px solid $color-pink;
+
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+[hidden],
+template {
+	display: none;
+}
+a {
+	background-color: transparent;
+	color: $color-black;
+	text-decoration: underline;
+}
+a:active,
+a:hover {
+	outline: 0;
+	color: $color-pink;
+	text-decoration: none;
+}
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+b,
+strong {
+	font-weight: bold;
+}
+dfn {
+	font-style: italic;
+}
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin-bottom: 20px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: $color-black;
+}
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
+	text-decoration: none;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+h1 {
+	font-family: sans-serif;
+	font-size: 26px;
+	font-size: 2.6rem;
+	padding-bottom: .5em;
+	border-bottom: 2px solid $color-black;
+}
+h1:first-letter {
+	margin-right: .1em;
+	font-size: 3.3rem;
+	color: $color-pink;
+}
+h2 {
+	font-size: 23px;
+	font-size: 2.3rem;
+	position: relative;
+	padding-bottom: .5em;
+	border-bottom: 2px solid $color-black;
+}
+h2::after {
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	z-index: 2;
+	content: '';
+	width: 20%;
+	height: 2px;
+	background-color: $color-pink;
+}
+h3 {
+  position: relative;
+  margin: 0 0 1.5em;
+  padding: 0.8em 0 0.8em 1.5em;
+  border: 1px solid $color-pink;
+  font-size: 1.143em;
+  font-weight: bold;
+	border-radius: 5px;
+}
+h3:before {
+  content: "";
+  position: absolute;
+  background: $color-pink;
+  top: 50%;
+  left: 0.5em;
+  margin-top :-15px;
+  height: 30px;
+  width: 8px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+}
+h4 {
+	font-size: 18px;
+	font-size: 1.8rem;
+	position: relative;
+	padding: 10px 15px;
+	background-color: #f0f0f0;
+	border-radius: 6px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, .1) inset;
+}
+h4::after {
+	position: absolute;
+	top: 100%;
+	left: 30px;
+	content: '';
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-top: 15px solid #f0f0f0;
+}
+h5 {
+	font-size: 16px;
+	font-size: 1.6rem;
+	padding: .5em .75em;
+	background: #f4f4f4;
+	border-top: 1px dashed #ccc;
+	border-bottom: 1px dashed #ccc;
+	box-shadow: 0 7px 10px -5px rgba(0, 0, 0, .1) inset;
+}
+h6 {
+	font-size: 14px;
+	font-size: 1.4rem;
+	border-bottom: 1px solid $color-black;
+	padding-bottom: 10px;
+}
+
+
+mark {
+	background: #ff0;
+	color: $color-black;
+}
+div,
+p,
+span,
+table,
+td,
+th,
+tr {
+	box-sizing: border-box;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+ul,
+li,
+ol {
+	box-sizing: border-box;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+ul {
+	li {
+		list-style: disc;
+		margin-left: 20px;
+		overflow: visible;
+	}
+}
+small {
+	font-size: 80%;
+}
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+img {
+	border: 0;
+	max-width: 100%;
+	height: auto;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+figure {
+	max-width: 100%;
+	margin: 0 0 40px;
+}
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+blockquote {
+	background: #fdfdfd;
+	color: #999;
+	border-radius: 10px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+	border: 1px solid #f4f4f4;
+	width: 100%;
+}
+pre {
+	overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+button {
+	overflow: visible;
+}
+button,
+select {
+	text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+input {
+	line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+input[type="search"] {
+	-webkit-appearance: textfield;
+	box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+input[type="text"] {
+	width: 100%;
+}
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+legend {
+	border: 0;
+	padding: 0;
+}
+textarea {
+	overflow: auto;
+}
+optgroup {
+	font-weight: bold;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	margin: 0 auto 50px;
+}
+thead {
+	border-bottom: 2px solid #999;
+}
+td,
+th {
+	padding: 10px;
+}
+tr:nth-child(even) {
+	background: #f4f4f4;
+}
+dt {
+	clear: left;
+	float: left;
+	width: 20%;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+dd {
+	margin: 0 0 20px 20%;
+}
+
 /*--------------------------------------------------------------
   container
 --------------------------------------------------------------*/
 #container {
-	width : 100% ;
+	width: 100%;
 }
 .row {
-	max-width : 1200px ;
-	margin : 0 auto ;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 /*--------------------------------------------------------------
   FlexSlider style
 --------------------------------------------------------------*/
 .flexslider li {
-	list-style : none ;
+	list-style: none;
 }
 .flex-direction-nav a {
-	font-size : 12px ;
-	font-size : 1.2rem ;
+	font-size: 12px;
+	font-size: 1.2rem;
 }
 /*--------------------------------------------------------------
   main
 --------------------------------------------------------------*/
 #main {
-	margin-bottom : 50px ;
+	margin-bottom: 50px;
 }
 
 /*--------------------------------------------------------------
   mainvisu
 --------------------------------------------------------------*/
 #mainvisu {
-	width : 100% ;
-	background : #fff ;
-	margin-bottom : 50px ;
+	width: 100%;
+	background: $color-white;
+	margin-bottom: 50px;
 }

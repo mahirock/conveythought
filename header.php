@@ -45,7 +45,8 @@
 						<span class="icon-bar"></span>
 					</button>
 					</div>
-				<div id="gnavi" class="collapse navbar-collapse">';
+				<div id="gnavi" class="collapse navbar-collapse">
+				';
 			echo $gMenu;
 			echo '
 					</div>

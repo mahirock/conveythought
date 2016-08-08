@@ -1,1 +1,30 @@
 // main: ../main.scss
+//widget
+
+.widget {
+	margin-bottom: 50px;
+  ul {
+  	padding-left: 20px;
+    li {
+    	overflow: visible;
+    	color: $color-pink;
+    }
+  }
+}
+#wp-calendar {
+  #next {
+   text-align: right;
+ }
+ tbody th,
+ tbody td {
+ 	text-align: center;
+ 	vertical-align: middle;
+	a {
+		color: $color-pink;
+		font-weight: bold;
+	}
+ }
+ #today {
+ 	background: #ccc;
+ }
+}

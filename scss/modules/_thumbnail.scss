@@ -5,65 +5,64 @@
   thumbnailtime
 --------------------------------------------------------------*/
 .archive-thumbnailtime {
-	padding : 20px 0;
-	color : #999;
-	font-family : sans-serif;
-	font-weight : bold;
+	padding: 20px 0;
+	color: #999;
+	font-family: sans-serif;
+	font-weight: bold;
 }
 
 /*--------------------------------------------------------------
   thumbnail
 --------------------------------------------------------------*/
 .archive-thumbnail {
-	padding : 20px 0;
+	padding: 20px 0;
 }
 .time-img {
-	background : #E6E6E6;
-	padding : 10px;
-	max-width : 150px;
-	max-height : 150px;
+	background: #E6E6E6;
+	padding: 10px;
+	max-width: 150px;
+	max-height: 150px;
   &:hover {
-  	background : #F8F8F8;
+  	background: #F8F8F8;
   }
   p {
-  	margin :0;
-  	background : #fff;
-  	padding : 10px;
+  	margin:0;
+  	background: $color-white;
+  	padding: 10px;
   }
   a {
-  	text-decoration : none;
-  	color : #999
+  	text-decoration: none;
+  	color: #999
   }
   span {
-  	display : block;
-  	text-align : center;
+  	display: block;
+  	text-align: center;
   }
-
-  @media screen and (max-width : 990px) {
+	@include max-screen($breakpoints-tbs-min) {
   	.thumbnail-day {
-  		font-size : 120%;
+  		font-size: 120%;
   	}
   	.thumbnail-date {
-  		font-size : 60%;
+  		font-size: 60%;
   	}
   }
 }
 .thumbnail-day {
-	font-size : 300%;
-	border-bottom : 5px solid #ccc;
-	line-height : 1.5;
-	color : #999;
+	font-size: 300%;
+	border-bottom: 5px solid #ccc;
+	line-height: 1.5;
+	color: #999;
 }
 .mini-img {
   img {
-  	width :100%;
-  	-webkit-transition : .2s;
-  	transition : .2s;
-  	opacity : 1;
+  	width:100%;
+  	-webkit-transition: .2s;
+  	transition: .2s;
+  	opacity: 1;
   }
   &:hover img {
-  	-webkit-transition : .2s;
-  	transition : .2s;
-  	opacity : 0.5;
+  	-webkit-transition: .2s;
+  	transition: .2s;
+  	opacity: 0.5;
   }
 }

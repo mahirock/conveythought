@@ -1,100 +1,102 @@
 // main: ../main.scss
 // nav
 
+/*--------------------------------------------------------------
+  nav
+--------------------------------------------------------------*/
 .navbar-fixed-top {
-	border-top : 3px solid $color-pink;
+	border-top: 3px solid $color-pink;
 }
 .header-nav {
-	background-color : $color-main;
-  a {
-  	text-decoration : none;
-  }
+	background-color: $color-black;
+	a {
+		text-decoration: none;
+	}
 }
 .navbar {
-	border : none;
-	margin-bottom : 0;
-	border-radius : 0;
+	border: none;
+	margin-bottom: 0;
+	border-radius: 0;
 }
 .navbar-default {
-  .navbar-nav li a,
-  .navbar-nav > li > a:hover,
-  .navbar-nav > li > a:focus {
-  	color : $color-white;
-  }
-  .navbar-nav li a:hover {
-  	background-color : $color-pink;
-  }
-  .navbar-collapse,
-  .navbar-form {
-  	border : none;
-  }
+	.navbar-nav {
+		li a,
+		& > li > a:hover,
+		& > li > a:focus {
+			color: $color-white;
+		}
+	}
+	.navbar-collapse,
+	.navbar-form {
+		border: none;
+	}
 }
 .nav {
-  li {
-  	margin : 0;
-  	line-height : 2;
-    .dropdown-menu {
-    	border : none;
-    }
-    &:hover .sub-menu li {
-    	position : relative;
-    	display : block;
-    }
-    @mixin min-screen($breakpoints-sm-min) {
-      &:hover > .dropdown-menu {
-    		display : block;
-    	}
-    	.sub-menu li {
-    		display : none;
-    	}
-    }
-  }
+	li {
+		margin: 0;
+		line-height: 2;
+		.dropdown-menu {
+			border: none;
+		}
+		&:hover .sub-menu li {
+			position: relative;
+			display: block;
+		}
+	}
 }
 .sub-menu {
-	padding : 0;
-	margin : 0;
-  li .sub-menu {
-  	position : absolute;
-  	margin-left : 100%;
-  	top : 0;
-  	border-radius : 0;
-  }
+	padding: 0;
+	margin: 0;
+	li .sub-menu {
+		position: absolute;
+		margin-left: 100%;
+		top: 0;
+		border-radius: 0;
+	}
 }
 .dropdown-menu > li > a {
-	line-height : 2;
+	line-height: 2;
 }
+.navbar-default .navbar-nav li a:hover,
 .current-menu-item,
 .current-menu-parent,
 .current-menu-ancestor {
-	background-color : $color-pink;
+	background-color: $color-pink;
 }
-/*SMART PHONE*/
-@mixin max-screen($breakpoints-sm-max) {
-  .nav {
-    li {
-      .dropdown-menu {
-        display : block;
-        position : relative;
-        background-color : $color-black;
-        box-shadow : none;
-      }
-    }
-  }
-  .navbar-default {
-    .navbar-nav > li > a:hover {
-  		background-color : $color-pink;
-  	}
-  }
+
+
+
+
+@include min-screen($breakpoints-sm-max) {
+	.nav li {
+		&:hover > .dropdown-menu {
+			display: block;
+		}
+		.sub-menu li {
+			display: none;
+		}
+	}
+}
+@include max-screen($breakpoints-sm-min) {
+	.nav li .dropdown-menu {
+		display: block;
+		position: relative;
+		background-color: $color-black;
+		box-shadow: none;
+	}
+	.navbar-default .navbar-nav > li > a:hover {
+		background-color: $color-pink;
+	}
 	.sub-menu {
-		width : 100%;
-    li {
-      .sub-menu {
-    		margin : 0;
-    		position : relative;
-        li {
-      		margin-left : 20px;
-      	}
-    	}
-    }
+		width: 100%;
+		li {
+			.sub-menu {
+				margin: 0;
+				position: relative;
+			}
+			.sub-menu li {
+				margin-left: 20px;
+			}
+		}
 	}
 }

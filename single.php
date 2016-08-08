@@ -24,6 +24,7 @@ get_header(); ?>
 				</header>
 
 				<div class="entry-content">
+					<?php the_post_thumbnail('full'); ?>
 					<?php the_content(); ?>
 				</div><!--entry-content-->
 

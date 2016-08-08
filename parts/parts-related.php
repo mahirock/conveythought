@@ -32,9 +32,9 @@
           <div class="related-entry-content">
             <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
               <?php if ( has_post_thumbnail() ): ?>
-              <?php echo get_the_post_thumbnail($post->ID); ?>
+              <p class="related-entry-thumbnail"><?php echo get_the_post_thumbnail($post->ID); ?></p>
               <?php else: ?>
-              <p><img src="<?php echo get_template_directory_uri(); ?>/img/no-image.png" alt="NO IMAGE" title="NO IMAGE" /><p>
+              <p class="related-entry-thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/no-image.png" alt="NO IMAGE" title="NO IMAGE" /><p>
               <?php endif; ?>
               <p><?php echo mb_strimwidth($post->post_title, 0, 32, "..", "UTF-8"); ?></p>
             </a>

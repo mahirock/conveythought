@@ -30,6 +30,26 @@ $custom_header_defaults = array(
 );
 add_theme_support( 'custom-header', $custom_header_defaults );
 
+/*--------------------------------------------------------------
+  customlogo
+--------------------------------------------------------------*/
+add_theme_support( 'custom-logo', array( 'size' => 'raindrops-logo' ) );
+function conveythought_login_logo() {
+	$logo		 = get_theme_mod( 'custom_logo' );
+	$logo_url	 = wp_get_attachment_url( $logo );
+	if ( false !== $logo_url ) {
+		?>
+		    <style type="text/css">
+		        #login h1 a {
+		            background-image: url(<?php echo $logo_url; ?> );
+		            padding-bottom: 30px;
+					      background-size:contain;
+		        }
+		    </style>
+		<?php
+	}
+}
+add_action( 'login_enqueue_scripts', 'conveythought_login_logo',11 );
 
 /*--------------------------------------------------------------
   color customizer
@@ -85,6 +105,9 @@ add_action( 'customize_register', 'conveythought_customizer_color' );
 
 //customizer css set
 function conveythought_customize_css() {
+    $basecolor = esc_attr( get_theme_mod( 'basecolor', '#000000' ) );
+    $maincolor = esc_attr( get_theme_mod( 'maincolor', '#ffafbd' ) );
+    $navlinkcolor = esc_attr( get_theme_mod( 'navlinkcolor', '#ffffff' ) );
     ?>
          <style type="text/css">
          /*Main Color*/
@@ -96,7 +119,7 @@ function conveythought_customize_css() {
             .tagcloud a:hover span,
             #copyright-area a,
             #wp-calendar tbody th a,
-            #wp-calendar tbody td a { color: <?php echo get_theme_mod( 'maincolor' ); ?>;}
+            #wp-calendar tbody td a { color: <?php echo $maincolor; ?>;}
             h2::after, h3:before,
             .toggle a,
             .nav-links a,
@@ -110,34 +133,34 @@ function conveythought_customize_css() {
             .current-menu-parent,
             .current-menu-ancestor,
             .navbar-default .navbar-nav > li > a:hover,
-            .navbar-default .navbar-nav li a:hover { background-color: <?php echo get_theme_mod( 'maincolor' ); ?>; }
-            h3{ border-color: <?php echo get_theme_mod( 'maincolor' ); ?>; }
-            body, .navbar-fixed-top { border-top-color: <?php echo get_theme_mod( 'maincolor' ); ?>; }
+            .navbar-default .navbar-nav li a:hover { background-color: <?php echo $maincolor; ?>; }
+            h3{ border-color: <?php echo $maincolor; ?>; }
+            body, .navbar-fixed-top { border-top-color: <?php echo $maincolor; ?>; }
 
          /*Base Color*/
             body, a, h1, h2, h3, h4, h5,h6,
             #header h1 a,.nav-links a,
             .link-page-nav a:hover span,
             .reply a,
-            .pager .current { color: <?php echo get_theme_mod( 'basecolor' ); ?>; }
+            .pager .current { color: <?php echo $basecolor; ?>; }
             .navbar-default,
             .header-nav,
             .breadcrumb,
             #copyright-area,
-            .nav li .dropdown-menu { background-color: <?php echo get_theme_mod( 'basecolor' ); ?>; }
+            .nav li .dropdown-menu { background-color: <?php echo $basecolor; ?>; }
             h1, h2,
             .comment-body,
-            .comment-author { border-bottom-color: <?php echo get_theme_mod( 'basecolor' ); ?>;}
-            .post-title { border-top-color: <?php echo get_theme_mod( 'basecolor' ); ?>;
-                          border-bottom-color: <?php echo get_theme_mod( 'basecolor' ); ?>; }
-            .entry-footer { border-top-color: <?php echo get_theme_mod( 'basecolor' ); ?>;
-                            border-bottom-color: <?php echo get_theme_mod( 'basecolor' ); ?>; }
-            h6 { border-bottom-color: <?php echo get_theme_mod( 'basecolor' ); ?>; }
+            .comment-author { border-bottom-color: <?php echo $basecolor; ?>;}
+            .post-title { border-top-color: <?php echo $basecolor; ?>;
+                          border-bottom-color: <?php echo $basecolor; ?>; }
+            .entry-footer { border-top-color: <?php echo $basecolor; ?>;
+                            border-bottom-color: <?php echo $basecolor; ?>; }
+            h6 { border-bottom-color: <?php echo $basecolor; ?>; }
 
             /*Nav Color*/
             .navbar-default .navbar-nav li a,
             .navbar-default .navbar-nav > li > a:hover,
-            .navbar-default .navbar-nav > li > a:focus { color: <?php echo get_theme_mod( 'navlinkcolor' ); ?>; }
+            .navbar-default .navbar-nav > li > a:focus { color: <?php echo $navlinkcolor; ?>; }
          </style>
     <?php
 }
